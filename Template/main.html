@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  {% load static %}  <!-- Add this line to load the static tag -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block main %}
+
+{% endblock main %}
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
